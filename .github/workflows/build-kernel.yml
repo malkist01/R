@@ -36,6 +36,8 @@ jobs:
           export KBUILD_BUILD_USER="malkist"
           export KBUILD_BUILD_HOST="phone"
           export PATH=$GITHUB_WORKSPACE/clang/bin:${PATH}
+          export LD_LIBRARY_PATH="$GITHUB_WORKSPACE/clang/lib:$LD_LIBRARY_PATH"
+          export KBUILD_BUILD_VERSION="1"
           args="                  ARCH=arm64 \
                                   O=../out \
                                   ${{ env.BUILD_ARGS }} \
