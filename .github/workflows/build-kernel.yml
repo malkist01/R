@@ -67,7 +67,3 @@ jobs:
         with:
           name: output_kernel
           path: AnyKernel3/*
-          
-      - name: Upload telegram
-         curl -fsSL -X POST https://api.telegram.org/bot<token>/sendDocument -F chat_id=<chat_id> -F document=@"./out/arch/arm64/boot/Image.gz-dtb" -F caption="4.9-Kernel"
-         
