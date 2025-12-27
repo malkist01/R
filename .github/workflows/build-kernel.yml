@@ -4,7 +4,9 @@ name: Build Kernel
 on:
   workflow_dispatch:
 
-
+env:
+  TZ: Asia/Jakarta
+  
 jobs:
   build-kernel:
     runs-on: ubuntu-latest
@@ -63,5 +65,5 @@ jobs:
       - name: Upload kernel to artifact
         uses: actions/upload-artifact@v4
         with:
-          name: output_kernel
+          name: Teletubies-Ginkgo
           path: AnyKernel3/*
