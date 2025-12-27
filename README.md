@@ -1,4 +1,4 @@
-# MikaKernel Builder
+# Kernel Builder
 
 Meow!
 
